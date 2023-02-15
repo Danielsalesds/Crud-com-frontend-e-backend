@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel="stylesheet" href="./css/style.css">
+    <title>Form Cadastro</title>
+</head>
+<body>
+    <div id="main-container">
+        <h1>Cadastre-se para acessar o sistema</h1>
+        <form id="register-form">
+            <div class="full-box">
+                <lable for="email">E-mail</lable>
+                <input type="email" name="email" id="email" placeholder="Digite seu E-mail" data-min-length="3">
+            </div>
+            <div class="half-box spacing">
+                <lable for="nome">Nome</lable>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu Nome">
+            </div>
+            <div class="half-box">
+                <lable for="lastname">Sobrenome</lable>
+                <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome">
+            </div>
+            <div class="half-box spacing">
+                <lable for="password">Senha</lable>
+                <input type="text" name="password" id="password" placeholder="Digite sua senha">
+            </div>
+            <div class="half-box">
+                <lable for="passconfirmation">Confirmar Senha</lable>
+                <input type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirme sua senha">
+            </div>
+            <div class="full-box">
+                <input type="checkbox" name="agreement" id="agreement">
+                <lable for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de uso</a></lable>
+            </div>
+            <div class="full-box">
+                <input type="submit"  id="btn-submit" value="registrar">
+            </div>
+        </form>
+    </div>
+
+    <div class="erro-validation template"></div>
+    <script src="./script/script.js"></script>
+</body>
+</html>
